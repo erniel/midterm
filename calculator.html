@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator </title>
+
+	<style type="text/css">
+		table{
+
+			width: 100px;
+			height: 300px;
+			background-color: gray;
+			border-radius: 10px
+
+		}
+
+		.button{
+			width: 30px;
+			height: 30px;
+			background-color: lightblue;
+			border-radius: 5px
+		}
+		.buttonope{
+			width: 30px;
+			height: 30px;
+			background-color: orange;
+			border-radius: 5px
+		}
+
+		.buttonc{
+			width: 30px;
+			height: 30px;
+			background-color: pink;
+			border-radius: 5px
+
+		}
+
+		.buttonplus{
+			width: 30px;
+			height: 70px;
+			background-color: orange;
+			border-radius: 5px
+		}
+
+		.buttonequal{
+			width: 70px;
+			height: 30px;
+			background-color: lightblue;
+			border-radius: 5px
+		}
+
+
+		.display{
+			width: 190px;
+			height: 40px;
+			background-color: lightgray;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<form name="Calculator">
+	<table border="5">
+		<tr>
+			<td colspan="5">
+			<input class="display"  type="text" name="input">
+			</td>
+		</tr>
+
+		<tr >
+			<td><input class="button"  type="button" name="7" value="7" onclick="Calculator.input.value +='7'"></td>
+			<td><input class="button"  type="button" name="8" value="8" onclick="Calculator.input.value +='8'"></td>
+			<td><input class="button"  type="button" name="9" value="9" onclick="Calculator.input.value +='9'"></td>
+			<td><input class="buttonope"  type="button" name="/" value="/" onclick="Calculator.input.value +='/'"></td>
+			<td><input class="buttonc"  type="button" name="c" value="C" onclick="Calculator.input.value =''"></td>
+			
+		</tr>
+
+
+		<tr>
+			<td><input class="button"  type="button" name="4" value="4" onclick="Calculator.input.value +='4'"></td>
+			<td><input class="button"  type="button" name="5" value="5" onclick="Calculator.input.value +='5'"></td>
+			<td><input class="button"  type="button" name="6" value="6" onclick="Calculator.input.value +='6'"></td>
+			<td><input class="buttonope"  type="button" name="*" value="*" onclick="Calculator.input.value +='*'"></td>
+			<td><input class="buttonope"  type="button" name="%" value="%" onclick="Calculator.input.value +='%'"></td>
+
+		<tr>
+			<td><input class="button"  type="button" name="1" value="1" onclick="Calculator.input.value +='1'"></td>
+			<td><input class="button"  type="button" name="2" value="2" onclick="Calculator.input.value +='2'"></td>
+			<td><input class="button"  type="button" name="3" value="3" onclick="Calculator.input.value +='3'"></td>
+			<td><input class="buttonope"  type="button" name="-" value="-" onclick="Calculator.input.value +='-'"></td>
+			<td rowspan="2"><input class="buttonplus"  type="button" name="+" value="+" onclick="Calculator.input.value +='+'"></td>
+			
+		</tr>
+
+		<tr>
+			<td><input class="button"  type="button" name="0" value="0" onclick="Calculator.input.value +='0'"></td>
+			<td><input class="button"  type="button" name="." value="." onclick="Calculator.input.value +='.'"></td>
+			<td colspan="2" ><input class="buttonequal"  type="button" name="" value="=" onclick="Calculator.input.value = eval(Calculator.input.value)"></td>
+			
+		</tr>
+
+
+
+
+	</table>
+	</form>
+
+</body>
+</html>
